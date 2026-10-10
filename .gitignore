@@ -1,0 +1,40 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Code coverage profiles and other test artifacts
+*.out
+coverage.*
+*.coverprofile
+profile.cov
+
+# Dependency directories (remove the comment below to include it)
+# vendor/
+
+# Go workspace file
+go.work
+go.work.sum
+
+# env file
+.env
+.env.local
+
+# 이 프로젝트 전용 (KMS 로컬 데이터/빌드 산출물)
+/bin/
+data/
+
+# LLM
+CLAUDE.md
+
+# 빌드 산출물 (go build ./cmd/server 결과)
+/server
+*.tar
+
+# 관리 API 대시보드가 저장하는 벤치 결과(ADMIN_API_BENCH_DIR 기본값의 상위)
+/admin-data/
